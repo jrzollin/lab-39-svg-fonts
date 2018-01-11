@@ -1,5 +1,8 @@
 import React from 'react';
-// import {Route} from 'react-router-dom';
+
+import ReactDom from 'react-dom';
+import FontAwesomeIcon from '@fortawesome/react-fontawesome';
+import { faCoffee } from '@fortawesome/fontawesome-free-solid'
 
 class App extends React.Component {
 
@@ -10,8 +13,9 @@ class App extends React.Component {
   render(){
     return(
       <React.Fragment>
-        <Header />
         <main>
+          <h1>Here is a cool font!!!</h1>
+          <FontAwesomeIcon icon={faCoffee} />
         </main>
       </React.Fragment>
     )
