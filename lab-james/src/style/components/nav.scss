@@ -3,19 +3,25 @@ ul {
   flex-direction: row;
 
   li{
-    margin-left: 1em;
     list-style: none;
     cursor: pointer;
-    padding: 0 1em;
+    padding: 1em;
     position: relative;
+    min-width: 100px;
 
     ul {
       display: none;
       flex-direction: column;
       position: absolute;
-      border: 1px solid black;
       background: white;
       color: black;
+      left: -2.5em;
+      width: 100%;
+
+      li {
+        border: 1px solid black;
+        padding: .5em;
+      }
     }
   }
 
